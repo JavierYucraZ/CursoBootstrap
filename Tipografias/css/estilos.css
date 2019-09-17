@@ -13,3 +13,11 @@ h1{
 .row>*{
 	border: 1px solid green;
 }
+
+section{
+	height: 300px;
+}
+
+section>*{
+	border : 1px solid purple;
+}
