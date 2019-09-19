@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Display</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		p{
+			border: 1px solid magenta;
+		}
+		a{
+			border: 1px solid navy;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		display : block; esto ocupa todo el ancho del contenedor
+		display : inline; el tamaño que se asigna esta en relacion al contenido, no le podemos asignar ni ancho ni alto 
+		inline-block : tiene el mismo comportamiento que tendria un elemento en linea, pero se le puede asignar un ancho y un alto
+		none : Desaparece un elemento visualmente, pero en codigo permanece
+		flex : su comportamiento es similar a un elemento en bloque, pero tiene la caracteristica de brindarle estas propiedades a todos sus hijos
+		inline-flex : Su comportamiento es similar a un elemento en linea, pero ademas le da todas las propiedades a sus hijos
+		d-none, d-block, d-inline, d-inline-block, d-flex, d-inline-flex
+	-->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<p class="p-2 m-2">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur harum soluta placeat accusantium voluptatem quod quidem in cumque iusto temporibus praesentium sequi, provident quo quae doloribus fuga dolore, repellendus facere!
+				</p>
+				<a href="" class="d-md-inline d-lg-none d-xl-block">Enlace 1</a>
+				<a href="">Enlace 2</a>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

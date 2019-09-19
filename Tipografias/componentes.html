@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Componentes</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	
+	<!-- Los componentes son pedazos de codigo que nos ayudan a agregar ciertas funcionalidades a nuestros sitios web
+		Barras de navegacion, tarjetas de presentacion, botones, elementos colapsables.. etc-->
+
+	<section class="container">
+		<div class="row p-4 justify-content-lg-center">
+			<article class="col-lg-8">
+				<div class="border rounded p-4 shadow-lg text-center">
+					<h2>Servicios</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat inventore cupiditate eius sapiente, a, ipsa porro recusandae explicabo expedita! Eos aliquam cumque quos quis totam dolor veritatis, repellendus rerum.
+					</p>
+					<!-- data-toggle asignarle una funcion especifica, toggle
+					data-target asigna un objetivo sobre el cual hara efecto nuestra funcion -->
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#objetivo" aria-expanded="false">Ver Documentacion</button>
+					<div class="collapse" id="objetivo">
+						<div class="my-3 p-3 rounded bg-success text-white text-left">
+							<h3>Pasos para inscribirse</h3>
+							<ol>
+								<li>Iniciar sesion</li>
+								<li>Ir al panel de control</li>
+								<li>Descargar hoja de inscripcion</li>
+							</ol>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis incidunt facere molestiae perspiciatis quas saepe nemo magni, accusantium, sit nobis.
+							</p>
+							<p class="text-center">
+								<a href="#objetivo" role="button" class="btn btn-secondary" data-toggle="collapse" aria-expanded="true">Cerrar</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="row p-4 justify-content-lg-center">
+			<article class="col-lg-8">
+				<div>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ejemplo-modal">
+						Lanzar modal
+					</button>	
+				</div>
+
+
+				<div class="modal fade" id="ejemplo-modal" tabindex="-1" role="dialog">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">
+									Titulo Del Modal
+								</h5>
+								<button type="button" class="close" data-dismiss="modal">
+									<span>&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>El contenido del modal va aqui</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">
+									Cerrar
+								</button>
+								<button type="button" class="btn btn-success" data-dismiss="modal">
+									Guardar Cambios
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="row p-4 justify-content-lg-center">
+			<article class="col-lg-8">
+				<div>
+					<a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#ModalCentrado">Lanzar modal</a>
+				</div>
+
+				<div class="modal fade" id="ModalCentrado" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Titulo del modal</h5>
+								<button type="button" class="close" data-dismiss="modal">
+									<span>&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>El contenido del modal va aqui</p>
+							</div>
+							<div class="modal-footer">
+								<button data-dismiss="modal" type="button" class="btn btn-secondary">Cerrar</button>
+								<button data-dismiss="modal" type="button" class="btn btn-success">Guardar Cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="row justify-content-lg-center">
+			<div class="col-lg-8">
+				<div class="border rounded p-4 shadow-lg text-center">
+					<div class="card">
+						<img src="http://lorempixel.com/400/200" class="card-img-top"/>
+						<div class="card-body">
+							<h5 class="card-title">
+								Titulo de la Tarjeta
+							</h5>
+							<p class="card-text">
+								Descripcion de la tarjeta
+							</p>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">Item 1</li>
+							<li class="list-group-item">Item 2</li>
+							<li class="list-group-item">Item 3</li>
+						</ul>
+						<div class="card-body">
+							<a href="#" class="card-link">Link 1</a>
+							<a href="#" class="card-link">Link 2</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
